@@ -1,6 +1,21 @@
-<table class="table table-striped">
-    <thead>
-        <th>Produto</th>
-        <th>Valor</th>
-    </thead>
-</table>
+<div class="container">
+
+    <h1>Produtos da minha loja</h1>
+
+    <h2>{{teste}}</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let produto of produtos'>
+                <td>{{produto.descricao}}</td>
+                <td>R${{produto.valor}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
